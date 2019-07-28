@@ -34,3 +34,10 @@ To build `example.proto` and `feature.proto` into Go source code:
 protoc --go_out=/go/src -I tensorflow tensorflow/tensorflow/core/example/feature.proto 
 protoc --go_out=/go/src -I tensorflow tensorflow/tensorflow/core/example/example.proto
 ```
+
+To run the Go protobuf serialization benchmark:
+
+```bash
+go test -bench=.
+```
+
